@@ -1,4 +1,4 @@
-# 3DGEO Remote Sensing Application Programming Interface (API)
+:books: docs: Atualização do README# 3DGEO Remote Sensing Application Programming Interface (API)
 
 <p style="text-align: justify;">
   <a href="https://www.linkedin.com/company/3dgeobr/">3DGEO Agricultural Monitoring with Remotely Piloted Aircraft System (RPAS) / Drones</a>, startup that uses the most modern aerial mapping tools with drones offering agile and low-cost geotechnology solutions for agricultural monitoring.<br>  
@@ -32,7 +32,7 @@
 
 <figure>
 <p align="center">
-  <img src="![app-sentinel-parte-1-ndvi drawio](https://github.com/GabesSeven/3DGEO-remote-sensing-API/assets/37443722/5a57d1fc-87de-4f65-819b-ba1119e6f0fa)" height="450" width="650" alt="3DGEO Remote Sensing API"/><br>
+  <img src="https://user-images.githubusercontent.com/37443722/283967390-5a57d1fc-87de-4f65-819b-ba1119e6f0fa.png" height="450" width="650" alt="3DGEO Remote Sensing API"/><br>
   Fluxo Parcial de Execução da API.
 </p>
 </figure>
