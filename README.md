@@ -1,52 +1,54 @@
 # 3DGEO remote sensing Application Programming Interface (API)
 
 <p style="text-align: justify;">
-  <a href="https://www.linkedin.com/company/3dgeobr/">3DGEO Monitoramento Agrícola com RPAS (Drones)</a>, startup que utiliza as mais modernas ferramentas de mapeamento aéreo com Drones oferecendo de forma ágil e com baixo custo soluções em geotecnologias para o monitoramento Agrícola. <br>  
+  <a href="https://www.linkedin.com/company/3dgeobr/">3DGEO Agricultural Monitoring with Remotely Piloted Aircraft System (RPAS) / Drones</a>, sstartup that uses the most modern aerial mapping tools with drones offering agile and low-cost geotechnology solutions for agricultural monitoring.<br>  
+  <br> 
+  This project is part of the first project built by the company. The code presented ⚠️⚠️<b>DOES NOT COMPROMISE INTELLECTUAL PROPERTY</b>⚠️⚠️, as it is present in a <b>Machine Learning technique</b>.<br>
   <br>
-  Neste projeto está parte do primeiro projeto contruído pela empresa. O código apresentado ⚠️⚠️<b>NÃO COMPROMETE A PROPRIEDADE INTELECTUAL</b>⚠️⚠️, pois a mesma está presente em uma <b>técnica Machine Learning.</b> <br>
+  The code is also ⚠️⚠️<b>NOT</b> in its <b>MOST CURRENT VERSION</b>.⚠️⚠️<br>
   <br>
-  O código também ⚠️⚠️<b>NÃO ESTÁ</b> na sua <b>VERSÃO MAIS ATUAL</b>.⚠️⚠️<br>
-  <br>
-  Esta API tem como objetivo <b>detectar aduteração</b> utilizando <b>imagens satelitáis</b> e conjunto de <b>índices de sensoriamento remoto</b>: Normalized Difference Vegetation Index (NDVI), Normalized Difference Water Index (NDWI) e Normalized Difference Built-up Index (NDBI), entre outros.
+  This API aims to <b>detect tampering</b> using <b>satellite images</b> and a set of <b>remote sensing indices</b>: Normalized Difference Vegetation Index (NDVI), Normalized Difference Water Index (NDWI) and Normalized Difference Built-up Index (NDBI), among others.
 </p>
 
 <br>
 <hr>
 <br>
 
-# Source Code Structure 🏘️
+## Source Code Structure 🏘️
+<br><br>
 
 <p style="text-align: justify;">
-  Neste código-fonte está presente as seguintes aplicações: <br>
+  This source code contains the following <b>applications</b>: <br>
   <ul>
-    <li><em>tdg_back</em>: pasta principal do projeto;</li>
-    <li><em>authentication</em>: responsável pelo <b>Creat</b>, <b>Read</b>, <b>Update</b> e <b>Delete</b> e <b>regras de negócio</b> para <b>usuários e grupos</b>;</li>
-    <li><em>sentinel</em>: responsável por obter <b>imagens satelitais.SentinelRequests. do Sentinel Hub</b>, <b>NDVI</b> e os <b>primeiros pré-processamentos</b> nas imanges e arquivos para geoprocessamento, por exemplo, segmentação de territórios a partir de shapefiles</li>.
+    <li><em>tdg_back</em>: main project folder;</li>
+    <li><em>authentication</em>: responsible for <b>Create</b>, <b>Read</b>, <b>Update</b> and <b>Delete</b> and <b>business rules</b> for <b>users and groups</b>;</li>
+    <li><em>sentinel</em>: responsible for obtaining <b>satellite images from Sentinel Hub</b>, <b>NDVI</b> and the <b>first pre-processing</b> of the images and files for geoprocessing, for example, segmenting territories from shapefiles.</li>
   </ul>
   <br>
-  ⚠️⚠️<b>Retirei diversas métodos das classes</b> e <b>somente deixei o cometário</b>⚠️⚠️, classes, por exemplo <em>sentinel.DetectChange</em>, podem estar de <b>difícis compreensão</b>.
+  ⚠️⚠️<b>I removed several methods from the classes and just left the comment</b>⚠️⚠️, classes, for example <em>sentinel.DetectChange</em>, can be <b>difficult to understand</b>.
 </p>
 
 <br>
 <hr>
 <br>
 
-# Goal 🎯
+## Goal 🎯
+<br><br>
 
 <p style="text-align: justify;">
-  Apresentar meu <b>domínio técnico</b>, <b>padrões de codificação</b>, <b>experiência em desenvolvimento</b> e <b>proficiência na linguagem</b> de programação <b>Python</b>. <br>
+  Present my <b>technical mastery</b>, <b>coding standards</b>, <b>development experience</b>, and <b>proficiency</b> in the <b>Python</b> programming language.
   <br>
-  Deixei disponível os seguintes <b>trechos de código</b>: <br> 
+  I made the following code <b>snippets available</b>: <br> 
   <ul>
-    <li><em>tdg_back.settings</em>: responsável pelas configurações do Django;</li>
-    <li><em>authentication.views.UserView.get</em>: responsável por retornar usuário através do Universally Unique Identifier (UUID);</li>
-    <li><em>authentication.views.LoginView.post</em>: responsável por autenticação de usuário;</li>
-    <li><em>sentinel.SentinelRequests.cut_out</em>: responsável por recortar a imagem satelital utilizando arquivos shapefile e biblioteca Geospatial Data Abstraction Library (GDAL);</li>
-    <li><em>sentinel.SentinelRequests.create_shapefile_geo</em>: responsável por criar arquivos shapefiles a partir de coordenadas gravadas no Banco de Dados;</li>
-    <li><em>sentinel.SentinelRequests.get_statistics</em>: responsável por obter valores estatíticos de píxels de imagens satelitais;</li>
-    <li><em>sentinel.SentinelRequests.unpack_tar_file</em>: responsável por descompactar imagens e metadados vindas de requisição ao Sentinel Hub;</li>
-    <li><em>sentinel.SentinelRequests.sentinel_image_request_rgb</em>: responsável por construir e enviar requisição ao Sentinel Hub;</li>
-    <li><em>sentinel.SentinelRequests.sentinel_authentication</em>: responsável pela autenticação a API do Sentinel Hub.</li>
+    <li><em>tdg_back.settings</em>: responsible for Django configurations;</li>
+    <li><em>authentication.views.UserView.get</em>: responsible for returning user data through the Universally Unique Identifier (UUID);</li>
+    <li><em>authentication.views.LoginView.post</em>: responsible for authentication;</li>
+    <li><em>sentinel.SentinelRequests.cut_out</em>: responsible for cropping satellite images using shapefiles and Geospatial Data Abstraction Library (GDAL);</li>
+    <li><em>sentinel.SentinelRequests.create_shapefile_geo</em>: responsible for creating shapefiles from coordinates recorded in the PostgreSQL;</li>
+    <li><em>sentinel.SentinelRequests.get_statistics</em>: responsible for obtaining statistical values of pixels from satellite images;</li>
+    <li><em>sentinel.SentinelRequests.unpack_tar_file</em>: responsible for decompacting images and metadata from requests to the Sentinel Hub;</li>
+    <li><em>sentinel.SentinelRequests.sentinel_image_request_rgb</em>: responsible for building and sending request to Sentinel Hub;</li>
+    <li><em>sentinel.SentinelRequests.sentinel_authentication</em>: responsible for authenticating the Sentinel Hub API.</li>
   </ul>  
 </p>
 
@@ -54,17 +56,22 @@
 <hr>
 <br>
 
+## Technologies Used 💾
+<br><br>
+
+<ul>
+  <li>``Python``</li>
+  <li>``Django``</li>
+  <li>``Django REST Framework``</li>
+  <li>``PostgreSQL``</li>
+  <li>``Sentinel Hub``</li>
+  <li>``GDAL and other geoprocessing libraries``</li> 
+  <li>``JSON Web Token (JWT)``</li>
+</ul> 
 
 <br>
 <hr>
 <br>
-
-
-<br>
-<hr>
-<br>
-
-
 
 ## Developer 🧑‍💻 
 <br><br>
