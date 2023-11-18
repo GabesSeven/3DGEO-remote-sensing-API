@@ -9,7 +9,7 @@
   <br>
   This API aims to <b>detect tampering</b> using <b>satellite images</b> and a set of <b>remote sensing indices</b>: Normalized Difference Vegetation Index (NDVI), Normalized Difference Water Index (NDWI) and Normalized Difference Built-up Index (NDBI), among others.
 </p>
-
+sa
 <br>
 <hr>
 <br>
