@@ -1,7 +1,7 @@
 # 3DGEO remote sensing Application Programming Interface (API)
 
 <p style="text-align: justify;">
-  <a href="https://www.linkedin.com/company/3dgeobr/">3DGEO Agricultural Monitoring with Remotely Piloted Aircraft System (RPAS) / Drones</a>, sstartup that uses the most modern aerial mapping tools with drones offering agile and low-cost geotechnology solutions for agricultural monitoring.<br>  
+  <a href="https://www.linkedin.com/company/3dgeobr/">3DGEO Agricultural Monitoring with Remotely Piloted Aircraft System (RPAS) / Drones</a>, startup that uses the most modern aerial mapping tools with drones offering agile and low-cost geotechnology solutions for agricultural monitoring.<br>  
   <br> 
   This project is part of the first project built by the company. The code presented ⚠️⚠️<b>DOES NOT COMPROMISE INTELLECTUAL PROPERTY</b>⚠️⚠️, as it is present in a <b>Machine Learning technique</b>.<br>
   <br>
