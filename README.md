@@ -32,7 +32,7 @@
 
 <figure>
 <p align="center">
-  <img src="https://user-images.githubusercontent.com/37443722/283967390-5a57d1fc-87de-4f65-819b-ba1119e6f0fa.png" height="450" width="650" alt="3DGEO Remote Sensing API"/><br>
+  <img src="https://user-images.githubusercontent.com/37443722/283967390-5a57d1fc-87de-4f65-819b-ba1119e6f0fa.png"  alt="3DGEO Remote Sensing API"/><br> <!--height="450" width="650"-->
   Fluxo Parcial de Execução da API.
 </p>
 </figure>
