@@ -7,7 +7,7 @@ from .managers import CustomUserManager
 from django.utils.text import slugify
 
 
-class CustomUser(AbstractUser):
+class CustomUserModel(AbstractUser):
     """
     Banco de dados de usuário customizado (diferente dos padrões do Django)
     """

@@ -1,39 +1,48 @@
 from django.contrib import admin
-from .models import GeometryCoordinatesUTM, GeometryBorder, GeometryDistrict, GeometryImmobile, DistrictImagesNDVISub, ImmobileImagesNDVISub, DistrictImageRGB, ImmobileImageRGB, NDVIStatistics
+from .models import (
+    GeometryCoordinatesUTMModel,
+    GeometryBorderModel,
+    GeometryDistrictModel,
+    GeometryImmobileModel,
+    DistrictImagesNDVISubModel,
+    ImmobileImagesNDVISubModel,
+    NDVIStatisticsModel,
+    DistrictImageRGBModel,
+    ImmobileImageRGBModel
+)
 
-
-@admin.register(GeometryCoordinatesUTM)
+@admin.register(GeometryCoordinatesUTModel)
 class GeometryCoordinatesUTMAdmin(admin.ModelAdmin):
-    list_display = [field.name for field in GeometryCoordinatesUTM._meta.fields]
+    list_display = [field.name for field in GeometryCoordinatesUTMModel._meta.fields]
 
-@admin.register(GeometryBorder)
+@admin.register(GeometryBorderModel)
 class GeometryBorderAdmin(admin.ModelAdmin):
-    list_display = [field.name for field in GeometryBorder._meta.fields]
+    list_display = [field.name for field in GeometryBorderModel._meta.fields]
 
-@admin.register(GeometryDistrict)
+@admin.register(GeometryDistrictModel)
 class GeometryDistrictAdmin(admin.ModelAdmin):
-    list_display = [field.name for field in GeometryDistrict._meta.fields]
+    list_display = [field.name for field in GeometryDistrictModel._meta.fields]
 
-@admin.register(GeometryImmobile)
+@admin.register(GeometryImmobileModel)
 class GeometryImmobileAdmin(admin.ModelAdmin):
-    list_display = [field.name for field in GeometryImmobile._meta.fields]
+    list_display = [field.name for field in GeometryImmobileModel._meta.fields]
 
-@admin.register(DistrictImagesNDVISub)
+@admin.register(DistrictImagesNDVISubModel)
 class DistrictImagesNDVISubAdmin(admin.ModelAdmin):
-    list_display = [field.name for field in DistrictImagesNDVISub._meta.fields]
+    list_display = [field.name for field in DistrictImagesNDVISubModel._meta.fields]
 
-@admin.register(ImmobileImagesNDVISub)
+@admin.register(ImmobileImagesNDVISubModel)
 class ImmobileImagesNDVISubAdmin(admin.ModelAdmin):
-    list_display = [field.name for field in ImmobileImagesNDVISub._meta.fields]
+    list_display = [field.name for field in ImmobileImagesNDVISubModel._meta.fields]
 
-@admin.register(DistrictImageRGB)
+@admin.register(DistrictImageRGBModel)
 class DistrictImageRGBAdmin(admin.ModelAdmin):
-    list_display = [field.name for field in DistrictImageRGB._meta.fields]
+    list_display = [field.name for field in DistrictImageRGBModel._meta.fields]
 
-@admin.register(ImmobileImageRGB)
+@admin.register(ImmobileImageRGBModel)
 class ImmobileImageRGBAdmin(admin.ModelAdmin):
-    list_display = [field.name for field in ImmobileImageRGB._meta.fields]
+    list_display = [field.name for field in ImmobileImageRGBModel._meta.fields]
 
-@admin.register(NDVIStatistics)
+@admin.register(NDVIStatisticsModel)
 class ImmobileImageRGBAdmin(admin.ModelAdmin):
-    list_display = [field.name for field in NDVIStatistics._meta.fields]
+    list_display = [field.name for field in NDVIStatisticsModel._meta.fields]

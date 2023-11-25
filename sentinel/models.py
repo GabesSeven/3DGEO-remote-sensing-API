@@ -2,55 +2,55 @@ from django.db import models
 from django.urls import reverse
 import uuid
 
-class GeometryCoordinatesUTM(models.Model):
+class GeometryCoordinatesUTMModel(models.Model):
     """
     Banco de dados
     """
     pass
     
-class GeometryBorder(models.Model):
+class GeometryBorderModel(models.Model):
     """
     Banco de dados
     """
     pass
 
-class GeometryDistrict(models.Model):
+class GeometryDistrictModel(models.Model):
     """
     Banco de dados
     """
     pass
 
-class GeometryImmobile(models.Model):
+class GeometryImmobileModel(models.Model):
     """
     Banco de dados
     """
     pass
 
-class DistrictImagesNDVISub(models.Model):
+class DistrictImagesNDVISubModel(models.Model):
     """
     Banco de dados
     """
     pass
 
-class ImmobileImagesNDVISub(models.Model):
+class ImmobileImagesNDVISubModel(models.Model):
     """
     Banco de dados
     """
     pass
     
-class DistrictImageRGB(models.Model):
+class DistrictImageRGBModel(models.Model):
     """
     Banco de dados
     """
     pass
 
-class ImmobileImageRGB(models.Model):
+class ImmobileImageRGBModel(models.Model):
     """
     Banco de dados
     """
     pass
 
-class NDVIStatistics(models.Model):
+class NDVIStatisticsModel(models.Model):
     """
     Banco de dados
     """

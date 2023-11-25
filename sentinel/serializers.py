@@ -1,5 +1,5 @@
 from rest_framework import serializers
-from .models import GeometryBorder, GeometryDistrict, GeometryImmobile, NDVIStatistics
+from .models import GeometryBorderModel, GeometryDistrictModel, GeometryImmobileModel, NDVIStatisticsModel
 
 """
 Retornam dados referentes as coordenadas dos imóveis, distritos e fronteira.

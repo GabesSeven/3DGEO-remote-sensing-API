@@ -6,7 +6,7 @@ from rest_framework_simplejwt.tokens import RefreshToken
 from rest_framework.response import Response
 from rest_framework.views import APIView
 
-from .models import CustomUser
+from .models import CustomUserModel
 from .serializers import CustomUserCreateSerializer, CustomUserSerializer
 from rest_framework.permissions import IsAuthenticated, AllowAny
 from django.conf import settings
@@ -90,7 +90,7 @@ class UserView(APIView):
         Realiza Read.
         """
         if uuid:
-            user = CustomUser.objects.filter(uuid=uuid).first()
+            user = CustomUserModel.objects.filter(uuid=uuid).first()
             if user:
                 serializer = CustomUserSerializer(user)
                 user_groups = user.groups.all()

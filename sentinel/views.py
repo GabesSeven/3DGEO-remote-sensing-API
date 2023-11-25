@@ -19,8 +19,22 @@ import rasterstats
 import shapefile
 from osgeo import gdal
 
-from .serializers import GeometryImmobileWithoutPropertiesSerializer, GeometryDistrictWithoutPropertiesSerializer, GeometryBorderWithoutPropertiesSerializer, PropertieImmobileSerializer
-from .models import GeometryCoordinatesUTM, GeometryBorder, GeometryDistrict, GeometryImmobile, DistrictImagesNDVISub, DistrictImageRGB, ImmobileImageRGB, NDVIStatistics
+from .serializers import (
+    GeometryImmobileWithoutPropertiesSerializer, 
+    GeometryDistrictWithoutPropertiesSerializer, 
+    GeometryBorderWithoutPropertiesSerializer, 
+    PropertieImmobileSerializer
+)
+from .models import (
+    GeometryCoordinatesUTMModel, 
+    GeometryBorderModel, 
+    GeometryDistrictModel, 
+    GeometryImmobileModel, 
+    DistrictImagesNDVISubModel, 
+    DistrictImageRGBModel, 
+    ImmobileImageRGBModel, 
+    NDVIStatisticsModel
+)
 from django.http import JsonResponse
 
 from django.shortcuts import render
@@ -147,7 +161,7 @@ class SentinelRequests():
 
         print("\n*** Criando arquivo shapefile... ***\n")
         try:
-            geometry = GeometryImmobile.objects.get(gid=gid)
+            geometry = GeometryImmobileModel.objects.get(gid=gid)
             sf = shapefile.Writer(f"media/files/input/shapefiles/geo/{gid}/polygon_{gid}.shp", shapeType=shapefile.POLYGON)
             sf.field("Nome", "C", size=50)
             sf.field("Valor", "N", decimal=10)
@@ -415,7 +429,7 @@ class SentinelRequests():
         # resp = oauth.get("https://services.sentinel-hub.com/oauth/tokeninfo")
         return True  
     
-class DetectChange(APIView, SentinelRequests):
+class DetectChangeView(APIView, SentinelRequests):
     """
     Responsável por varrer todas propriedades, distrito por distrito, detectar alteração e informar ao frontend todas regiões detectadas. 
     """
@@ -690,7 +704,7 @@ class DetectChange(APIView, SentinelRequests):
     Prepara dados de resposta ao usuário e retorna ao frontend.
     """
     
-class GetImageRgb(DetectChange):
+class GetImageRgbView(DetectChangeView):
     """
     Retorna RGB_NEW.png e RGB_OLD.png para distritos ou imóveis.
     """
